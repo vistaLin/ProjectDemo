@@ -19,6 +19,20 @@ extension NSString {
 }
 
 extension String {
+    //解码:把任何参数转换成适合放在URL中的字符串。
+     func urlEncoded() -> String {
+         let encodeUrlString = self.addingPercentEncoding(withAllowedCharacters:
+             .urlQueryAllowed)
+         return encodeUrlString ?? ""
+     }
+  
+     //将编码后的url转换回原始的url
+     func urlDecoded() -> String {
+         return self.removingPercentEncoding ?? ""
+     }
+}
+
+extension String {
     
   
     
