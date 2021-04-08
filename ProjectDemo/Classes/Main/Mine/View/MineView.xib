@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MineView" customModule="HomeDoctorManager" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="692" height="1018"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholderAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="zIH-yf-mmV">
+                    <rect key="frame" x="96" y="52" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="74" id="6I7-sO-97R"/>
+                        <constraint firstAttribute="height" constant="74" id="bVr-Fk-Ric"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5B-3f-ai7">
+                    <rect key="frame" x="138" y="199" width="139" height="35"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTg-R6-Shv">
+                    <rect key="frame" x="297" y="840" width="152" height="92"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="cGr-DY-56l"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="退出登录" image="ExitLogin">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Se-bz-UUS">
+                    <rect key="frame" x="434" y="606" width="64" height="77"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="版本号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUz-Wv-wb6">
+                    <rect key="frame" x="181" y="517" width="70" height="53"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="qTg-R6-Shv" secondAttribute="bottom" constant="48" id="4ri-hV-OSX"/>
+                <constraint firstAttribute="trailing" secondItem="8Se-bz-UUS" secondAttribute="trailing" constant="16" id="HLm-WS-vCw"/>
+                <constraint firstItem="DUz-Wv-wb6" firstAttribute="top" secondItem="E5B-3f-ai7" secondAttribute="bottom" constant="62" id="JAE-MS-xdU"/>
+                <constraint firstItem="8Se-bz-UUS" firstAttribute="centerY" secondItem="DUz-Wv-wb6" secondAttribute="centerY" id="SJn-D8-ECl"/>
+                <constraint firstItem="E5B-3f-ai7" firstAttribute="top" secondItem="zIH-yf-mmV" secondAttribute="bottom" constant="16" id="Shi-cu-WVP"/>
+                <constraint firstItem="DUz-Wv-wb6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="XnE-x7-9WG"/>
+                <constraint firstItem="qTg-R6-Shv" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="YTG-KU-qmP"/>
+                <constraint firstItem="zIH-yf-mmV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="52" id="htz-vL-8Jv"/>
+                <constraint firstItem="E5B-3f-ai7" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="w0H-Jy-oyS"/>
+                <constraint firstItem="zIH-yf-mmV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="xoD-Xj-jz4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="avatarImageView" destination="zIH-yf-mmV" id="3d6-Ke-asb"/>
+                <outlet property="exitLoginButton" destination="qTg-R6-Shv" id="tU6-eJ-rN7"/>
+                <outlet property="nameLabel" destination="E5B-3f-ai7" id="DHf-Su-n9m"/>
+                <outlet property="versionLabel" destination="8Se-bz-UUS" id="Chd-kJ-jYl"/>
+            </connections>
+            <point key="canvasLocation" x="-4328.985507246377" y="-921.42857142857133"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ExitLogin" width="24" height="24"/>
+        <image name="placeholderAvatar" width="75" height="74"/>
+        <systemColor name="systemBackgroundColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
