@@ -23,9 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let _ = CustomWebViewPool.shared
         keyboardConfig()
         initRootVC()
-        let router: AppRouting = AppRouter.shared
-        // swiftlint:disable no_hardcoded_strings
-        router.register(path: "InternalMenu", navigator: InternalMenuNavigator())
+//        let router: AppRouting = AppRouter.shared
+//        // swiftlint:disable no_hardcoded_strings
+//        router.register(path: "InternalMenu", navigator: InternalMenuNavigator())
         
         return true
     }
